@@ -1,0 +1,18 @@
+# Virtual environments
+.venv/
+**/.venv/
+
+# Environment files
+.env
+**/.env
+
+# API key files
+API KEYS.txt
+**/API KEYS.txt
+
+# Python cache
+__pycache__/
+*.pyc
+
+# VS Code
+.vscode/

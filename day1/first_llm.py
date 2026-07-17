@@ -1,0 +1,25 @@
+import os
+from pathlib import Path
+from dotenv import load_dotenv
+from groq import Groq
+
+load_dotenv()
+my_api_key = os.getenv("GROK_API")
+
+if not my_api_key:
+    raise ValueError("NO API KEY:ERROR")
+
+client = Groq(api_key=my_api_key)
+model = "llama-3.3-70b-versatile"
+role = "user"
+prompt = "DO you know Virat Kohli"
+
+msg = {
+    "role": role,
+    "prompt": prompt
+}
+
+messages=[msg]
+
+response=client.chat.completions.create(model=model, messages=msg)
+print(response)
