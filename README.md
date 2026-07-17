@@ -27,7 +27,6 @@ A collection of my hands-on Generative AI learning projects built with Python an
 - Qdrant
 - RAG
 - AI Agents
-- LangChain
 
 ---
 **Author:** Jay Jaiswal
